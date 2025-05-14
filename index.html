@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fa" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zenora GNU/Linux</title>
+  <link rel="icon" type="image/Svg" href="/assets/img/zenora-logo-dark.svg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/index.css">
+</head>
+<body>
+  <div class="loading-screen" id="loadingScreen">
+    <div class="loading-logo">
+      <img id="loadingLogo" src="/assets/img/zenora-logo-dark.svg" alt="Zenora logo">
+    </div>
+    <div class="loading-text">loading...</div>
+    <div class="progress-container">
+      <div class="progress-bar" id="progressBar"></div>
+    </div>
+  </div>
+
+  <div class="navbar">
+    <div class="logo">
+      <img src="/assets/img/zenora-logo-dark.svg" alt="Zenora logo">
+      <span>Zenora GNU/Linux</span>
+    </div>
+    <div class="nav-links">
+      <a href="#" class="nav-link active" data-page="home" onclick="loadContent('home'); return false;">Home</a>
+      <a href="#" class="nav-link" data-page="download" onclick="loadContent('download'); return false;">Download</a>
+      <a href="#" class="nav-link" data-page="wiki" onclick="loadContent('wiki'); return false;">Wiki</a>
+      <a href="#" class="nav-link" data-page="about" onclick="loadContent('about'); return false;">About</a>
+    </div>
+    <div class="controls">
+      <button class="control-btn" id="themeToggle" onclick="toggleTheme()" title="Toggle theme">
+        <i class="fas fa-moon" id="themeIcon"></i>
+      </button>
+      <button class="control-btn" id="langToggle" onclick="toggleLanguage()" title="Toggle language">
+        <i class="fas fa-globe"></i>
+      </button>
+      <div class="hamburger-btn" id="hamburgerBtn" onclick="toggleMenu()" title="Menu">
+        <div class="hamburger-icon">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-links">
+      <a href="#" class="mobile-link active" data-page="home" onclick="loadContent('home'); return false;">
+        <i class="fas fa-home"></i>
+        Home
+      </a>
+      <a href="#" class="mobile-link" data-page="download" onclick="loadContent('download'); return false;">
+        <i class="fas fa-download"></i>
+        Download
+      </a>
+      <a href="#" class="mobile-link" data-page="about" onclick="loadContent('about'); return false;">
+        <i class="fas fa-info-circle"></i>
+        About
+      </a>
+      <a href="#" class="mobile-link" data-page="wiki" onclick="loadContent('wiki'); return false;">
+        <i class="fas fa-info-circle"></i>
+        Wiki
+      </a>
+    </div>
+  </div>
+
+  <div class="menu-overlay" id="menuOverlay" onclick="toggleMenu()"></div>
+
+  <main id="main-content"></main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-content">
+        <div class="footer-info">
+          <h3>Zenora GNU/Linux</h3>
+          <p>A lightweight and powerful Linux distribution for modern computing</p>
+          <p>Open Source. Community Driven. Made with ❤️</p>
+        </div>
+        <div class="footer-links">
+          <ul>
+            <li><a href="#" onclick="loadContent('home'); return false;">Home</a></li>
+            <li><a href="#" onclick="loadContent('download'); return false;">Download</a></li>
+            <li><a href="#" onclick="loadContent('wiki'); return false;">Wiki</a></li>
+            <li><a href="#" onclick="loadContent('about'); return false;">About</a></li>
+            <li><a href="#">Community</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <p>© 2025 Zenora Project. All rights reserved.</p>
+        <p>Designed with passion by <a href="https://github.com/miladalizadw" target="_blank">Milad Alizadeh</a></p>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/showdown@2.1.0/dist/showdown.min.js"></script>
+  <script src="/assets/js/index.js"></script>
+</body>
+</html>

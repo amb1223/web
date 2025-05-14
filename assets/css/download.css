@@ -1,0 +1,236 @@
+  .download-section {
+    padding: 6rem 2rem;
+    background: var(--card-bg-dark);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-top: 1px solid rgba(26, 115, 232, 0.2);
+    position: relative;
+    overflow: hidden;
+  }
+
+  [data-theme="light"] .download-section {
+    background: var(--card-bg-light);
+    border-top: 1px solid rgba(26, 115, 232, 0.1);
+  }
+
+  .download-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .download-header {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  .download-header h2 {
+    font-size: 2.8rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    letter-spacing: -1px;
+  }
+
+  .download-header h2::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 5px;
+    margin: 1.5rem auto 0;
+    border-radius: 3px;
+    background: linear-gradient(to right, #1a73e8, #5e9eff);
+  }
+
+  .download-header p {
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.7;
+    opacity: 0.9;
+  }
+
+  .architecture-section {
+    margin-bottom: 4rem;
+  }
+  
+  .architecture-title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+  }
+  
+  .architecture-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(to right, #1a73e8, #5e9eff);
+  }
+
+  [data-theme="light"] .architecture-title::after {
+    background: linear-gradient(to right, #1a73e8, #5e9eff);
+  }
+
+  .download-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
+  }
+
+  .download-card {
+    background: var(--glass-bg);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 16px;
+    padding: 2.5rem;
+    text-align: center;
+    transition: var(--transition);
+    border: 1px solid rgba(26, 115, 232, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  }
+
+  [data-theme="light"] .download-card {
+    background: var(--glass-bg-light);
+    border: 1px solid rgba(26, 115, 232, 0.1);
+  }
+
+  .download-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+    border-color: rgba(26, 115, 232, 0.4);
+  }
+
+  .coming-soon {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .coming-soon::after {
+    content: 'Coming Soon';
+    position: absolute;
+    top: 10px;
+    right: -30px;
+    background: #ff6b6b;
+    color: white;
+    padding: 0.2rem 2rem;
+    transform: rotate(45deg);
+    font-size: 0.8rem;
+    font-weight: bold;
+  }
+
+  .download-icon {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(to right, #1a73e8, #5e9eff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .download-card h3 {
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+  }
+
+  .download-card p {
+    line-height: 1.7;
+    opacity: 0.9;
+    margin-bottom: 2rem;
+  }
+
+  .download-btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: linear-gradient(135deg, rgba(26, 115, 232, 0.9), rgba(94, 158, 255, 0.9));
+    color: white;
+    border-radius: 50px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 30px rgba(26, 115, 232, 0.3);
+  }
+
+  .download-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 40px rgba(26, 115, 232, 0.4);
+    background: linear-gradient(135deg, rgba(26, 115, 232, 1), rgba(94, 158, 255, 1));
+  }
+
+  .coming-soon-btn {
+    background: #6c757d !important;
+    pointer-events: none;
+    cursor: not-allowed;
+  }
+
+  .instructions {
+    background: var(--glass-bg);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 16px;
+    padding: 2.5rem;
+    margin-top: 4rem;
+    border: 1px solid rgba(26, 115, 232, 0.2);
+  }
+
+  [data-theme="light"] .instructions {
+    background: var(--glass-bg-light);
+    border: 1px solid rgba(26, 115, 232, 0.1);
+  }
+
+  .instructions h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+
+  .steps {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .step {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+
+  .step-number {
+    background: linear-gradient(to right, #1a73e8, #5e9eff);
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    flex-shrink: 0;
+  }
+
+  .step-content h4 {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+  }
+
+  .step-content p {
+    line-height: 1.7;
+    opacity: 0.9;
+  }
+
+  @media (max-width: 768px) {
+    .download-header h2 {
+      font-size: 2.2rem;
+    }
+    
+    .download-options {
+      grid-template-columns: 1fr;
+    }
+
+    .architecture-title {
+      font-size: 1.8rem;
+    }
+  }
